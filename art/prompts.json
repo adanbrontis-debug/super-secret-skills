@@ -1,0 +1,129 @@
+{
+  "_estilo": "Black and white cinematic still, high contrast, hard light and deep shadows, surreal and eerie like a Kubrick film. {escena} Centered composition, clean bold shapes, large readable forms, no people, no text, no letters, no numbers, no logos.",
+  "_estilo_hud": "Black and white retro-futuristic 1980s sci-fi computer graphic, high contrast. {escena} Dark background, bright crisp lines. Clean bold shapes, no readable text, no letters, no numbers, no logos.",
+  "_modelo": "Nano Banana Pro en Weave, 1:1, 1K",
+  "brontis-cien-malas-ideas": {
+    "estilo": "_estilo",
+    "escena": "An endless hotel corridor in strict one-point perspective, centered and symmetrical, patterned carpet, identical doors on both sides. The ceiling is crowded with hundreds of bare light bulbs hanging on cords at different heights, almost all of them dark and dead; one single bulb in the center of the frame glows brightly and lights the corridor."
+  },
+  "brontis-cero-pesos": {
+    "estilo": "_estilo",
+    "escena": "The inside of a vast, completely empty bank vault seen from its massive round steel door, which stands wide open. Bare metal walls of empty safe deposit boxes. On the floor, in the exact center, lies one single small coin lit by a narrow beam of light from above."
+  },
+  "brontis-el-stunt": {
+    "estilo": "_estilo",
+    "escena": "A grand piano hanging in mid-air from a tall construction crane high above an empty city plaza at night. Dozens of spotlights and camera flashes on the ground all point up at the piano. Newspapers fly in the wind across the plaza."
+  },
+  "brontis-robar-como-artista": {
+    "estilo": "_estilo",
+    "escena": "An empty museum gallery in strict one-point perspective with framed paintings on both walls. On the far wall hangs an ornate gilded frame that contains no painting, only the exposed brass clockwork gears of a mechanism. A velvet museum rope stands in front of it."
+  },
+  "brontis-la-frase": {
+    "estilo": "_estilo",
+    "escena": "An enormous, completely blank billboard standing alone in a flat empty desert at dusk, lit from below by two strong spotlights, under a dark sky. The billboard surface is pure white and empty. Long shadows on the cracked ground."
+  },
+  "brontis-el-guionista-de-30": {
+    "estilo": "_estilo",
+    "escena": "A film clapperboard resting on an empty director's chair in the middle of a dark empty soundstage. Above it hangs a giant analog stopwatch like a moon. A single hard spotlight, cables coiled on the floor."
+  },
+  "brontis-hilo-fino": {
+    "estilo": "_estilo",
+    "escena": "A single giant sewing needle standing vertically in the center. A long thin thread runs from its eye and weaves through a row of small vintage mobile phones and tiny old television sets floating in the dark, stitching them together like beads. Strong rim light."
+  },
+  "brontis-manifiesto-sin-cursileria": {
+    "estilo": "_estilo",
+    "escena": "A tall flagpole planted on top of a lonely rock in the middle of a stormy sea. The huge flag is completely blank and whips violently in the wind. Dramatic storm clouds, waves crashing against the rock."
+  },
+  "brontis-tijera": {
+    "estilo": "_estilo",
+    "escena": "A giant pair of steel scissors cutting through a long ribbon of crumpled paper that stretches into the distance like a road. Cut pieces of paper fall to the ground. Minimal dark studio, hard light."
+  },
+  "brontis-director-de-arte-invisible": {
+    "estilo": "_estilo",
+    "escena": "An empty photo studio with a seamless paper backdrop. A vintage large-format camera on a tripod points at a single apple on a stool, lit by one softbox. A pair of empty white gloves floats in mid-air behind the camera, as if an invisible photographer were about to press the shutter."
+  },
+  "brontis-plano-a-plano": {
+    "estilo": "_estilo",
+    "escena": "A long film set built as a series of identical empty rooms seen one behind another through open doorways, like nested frames, in strict one-point perspective. A vintage movie camera on a dolly rolls along straight dolly tracks that run down the middle toward the viewer."
+  },
+  "brontis-storyboard-express": {
+    "estilo": "_estilo",
+    "escena": "A dark studio wall covered by a perfect grid of pinned paper sheets. Each sheet has a simple pencil sketch of the same wooden chair from a different camera angle. A single desk lamp lights the wall from one side."
+  },
+  "brontis-el-gemelo": {
+    "estilo": "_estilo_hud",
+    "escena": "Two identical faceless mannequin heads facing each other in profile, perfectly mirrored, on two pedestals. A wireframe grid behind them and thin callout lines connecting the matching points of both heads: eyes, nose, chin, ear, like a scanner comparing them."
+  },
+  "brontis-disecar-referencias": {
+    "estilo": "_estilo_hud",
+    "escena": "A classical marble bust of a head in three-quarter profile, centered, being forensically analyzed: a wireframe grid behind it, thin callout lines pointing to the eye, nose and jaw, square measurement brackets, circular target reticles and small empty rectangular data panels around the edges of the frame, like a medical scan interface."
+  },
+  "brontis-el-deck-que-se-cuenta-solo": {
+    "estilo": "_estilo",
+    "escena": "An empty auditorium in strict one-point perspective with rows of empty seats. At the end, a giant projection screen shows only a bright empty rectangle of light. A beam of projector light cuts through the dusty air above the seats. A lone lectern stands on stage."
+  },
+  "brontis-la-primera-diapositiva": {
+    "estilo": "_estilo",
+    "escena": "A single domino standing upright at the start of an extremely long line of dominoes that snakes away into the dark distance across a polished floor. One spotlight falls only on the first domino."
+  },
+  "brontis-el-cliente-imposible": {
+    "estilo": "_estilo",
+    "escena": "An empty corporate boardroom in strict one-point perspective, centered and symmetrical: a very long glossy table with empty office chairs on both sides, fluorescent ceiling panels, blinds on the windows. At the far head of the table, where the boss would sit, floats a giant black sphere with one enormous human eye in its center, staring straight at the viewer."
+  },
+  "brontis-traductor-de-feedback": {
+    "estilo": "_estilo",
+    "escena": "A vintage telephone switchboard in a dark room. From the left, a chaotic knotted tangle of cables enters the machine; from the right side, the same cables come out perfectly straight and parallel. A single lamp lights the machine."
+  },
+  "brontis-jurado-de-cannes": {
+    "estilo": "_estilo",
+    "escena": "A single trophy on a marble pedestal in the middle of an empty grand museum hall. A row of five empty high-backed judges' chairs faces it. A beam of light from a skylight falls on the trophy."
+  },
+  "brontis-por-que-se-hizo-viral": {
+    "estilo": "_estilo",
+    "escena": "An endless wall of old CRT televisions stacked from floor to ceiling in a dark warehouse. All the screens show grey static except one television in the exact center, which glows bright with a simple play triangle."
+  },
+  "brontis-la-autopsia": {
+    "estilo": "_estilo",
+    "escena": "A morgue examination table under a single round surgical lamp in a cold tiled room. On the table, instead of a body, lies a large crumpled advertising poster partly covered by a white sheet. A tray of autopsy instruments beside it."
+  },
+  "brontis-el-case-video": {
+    "estilo": "_estilo",
+    "escena": "A vintage film projector in a dark empty screening room, casting a strong cone of light toward the viewer, dust floating in the beam. On top of the projector stands a small award statuette in silhouette."
+  },
+  "brontis-el-becario-eterno": {
+    "estilo": "_estilo",
+    "escena": "An office desk at night piled with towering stacks of paper, a single paper coffee cup steaming in the middle, a desk lamp switched on, an empty swivel chair, sticky notes stuck everywhere. Through the window behind, the lights of a city at night."
+  },
+  "brontis-ya-existe": {
+    "estilo": "_estilo",
+    "escena": "An immense archive library with endless towering shelves in strict one-point perspective, every shelf packed with identical sheets of paper. In the central aisle, one single sheet of paper lies on a small reading table under a lamp, looking exactly like all the others."
+  },
+  "brontis-el-cementerio-de-ideas": {
+    "estilo": "_estilo",
+    "escena": "A quiet cemetery at night with neat rows of small tombstones receding into the fog. On top of each tombstone sits a dead, dark light bulb. In the center, one tombstone's bulb is flickering back to life, glowing brightly and lighting the graves around it."
+  },
+  "brontis-el-bautizo": {
+    "estilo": "_estilo",
+    "escena": "A ship christening in a dry dock: a champagne bottle on a rope swings toward the enormous bow of a brand new ship, frozen a moment before impact. The area of the hull where the name should be painted is completely blank. Floodlights, dramatic scale."
+  },
+  "brontis-el-tropicalizador": {
+    "estilo": "_estilo",
+    "escena": "A classic glass snow globe on a dark desk under a single lamp. Inside the globe there is a tiny tropical beach with a palm tree, and snow is falling gently over the palm tree. Strange, poetic, quiet."
+  },
+  "brontis-memeificador": {
+    "estilo": "_estilo",
+    "escena": "A classical marble bust of a stern ancient philosopher on a pedestal in an empty museum hall, wearing modern black pixelated sunglasses, lit by a single dramatic museum spotlight."
+  },
+  "brontis-pocket-focus-group": {
+    "estilo": "_estilo",
+    "escena": "A focus group room seen from a dark observation room through a large one-way mirror. On the other side, around a round table, six small wooden artist mannequins sit on office chairs, all turned toward a single plain product box in the center of the table. Fluorescent light on their side, darkness on ours."
+  },
+  "brontis-el-lunes": {
+    "estilo": "_estilo",
+    "escena": "An office desk at dawn with a stack of papers and folders so tall it rises out of frame into the ceiling. On top of the lowest visible part of the stack, a classic twin-bell alarm clock with a blank face is ringing. A single ray of sunrise light cuts through window blinds."
+  },
+  "brontis-vende-mejor": {
+    "estilo": "_estilo",
+    "escena": "A single chess king standing calm and upright in the center of a giant chessboard floor that stretches to the horizon, surrounded by many fallen pawns. Low dramatic light, very long shadows, one-point perspective."
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@500;600&family=Instrument+Serif:ital@1&display=swap">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; background: #f3efe4; color: #111; font-family: "Geist", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  .card { position: absolute; inset: 22px; border: 2px solid #111; border-radius: 16px; background: #f8f5ec; overflow: hidden; display: grid; grid-template-rows: 1fr auto; }
+  .strip { display: grid; grid-template-columns: repeat(10, 1fr); gap: 0; border-bottom: 2px solid #111; }
+  .strip img { width: 100%; aspect-ratio: 1; display: block; image-rendering: pixelated; border-right: 2px solid #111; }
+  .strip img:nth-child(10n) { border-right: 0; }
+  .text { display: grid; grid-template-columns: 1fr auto; align-items: end; padding: 26px 40px 34px; gap: 40px; }
+  h1 { margin: 0; font-weight: 600; font-size: 118px; line-height: .86; letter-spacing: -.06em; }
+  h1 .dot { background: linear-gradient(90deg, #00a6e0, #5b4bff 22%, #c13cff 40%, #ff2d8a 56%, #ff5a1f 70%, #ffb000 84%, #d7ff1f); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .side { text-align: right; padding-bottom: 8px; }
+  .by { font-family: "Instrument Serif", serif; font-style: italic; font-size: 40px; line-height: 1; }
+  .sub { margin-top: 12px; font-size: 22px; font-weight: 500; letter-spacing: -.02em; color: #5a564d; max-width: 22ch; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="strip">/*__IMGS__*/</div>
+  <div class="text">
+    <h1>Super Secret<br>Skills<span class="dot">.</span></h1>
+    <div class="side">
+      <div class="by">By Brontis.</div>
+      <div class="sub">20 skills gratis para Claude Code, para la chamba creativa de todos los días.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

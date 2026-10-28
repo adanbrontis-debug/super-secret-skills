@@ -1,0 +1,26 @@
+{
+  "_nota": "Ajustes por imagen al tramar con site/dither.py. Lo demás usa los valores por defecto: 224 px, gamma 0.6, Atkinson.",
+  "brontis-hilo-fino": {
+    "gamma": 0.9
+  },
+  "brontis-tijera": {
+    "gamma": 0.9
+  },
+  "brontis-traductor-de-feedback": {
+    "recorte_previo": "ffmpeg crop=650:650:187:187 sobre la original, que venía con margen blanco"
+  },
+  "brontis-el-cementerio-de-ideas": {
+    "gamma": 0.9
+  },
+  "brontis-el-bautizo": {
+    "gamma": 0.9
+  },
+  "brontis-pocket-focus-group": {
+    "gamma": 0.9,
+    "recorte_previo": "ffmpeg crop=760:760:140:60 sobre la original (guardada como .original.png)"
+  },
+  "brontis-el-lunes": {
+    "gamma": 0.9,
+    "recorte_previo": "ffmpeg crop=620:620:250:300 sobre la original (guardada como .original.png)"
+  }
+}

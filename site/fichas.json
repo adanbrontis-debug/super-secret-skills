@@ -1,0 +1,343 @@
+{
+  "brontis-cien-malas-ideas": {
+    "pasos": [
+      "Saca cien ideas en cinco rondas, cada una con una regla distinta.",
+      "Se vale lo obvio, lo prohibido, lo prestado y lo ridículo.",
+      "Te entrega las tres que sí valen y por qué se salvan."
+    ],
+    "ejemplos": [
+      "Dame cien malas ideas para una cafetería de barrio.",
+      "Estoy bloqueado con este brief, destrábame."
+    ]
+  },
+  "brontis-cero-pesos": {
+    "pasos": [
+      "Revisa lo que tu marca ya tiene y no está usando.",
+      "Monta cada idea en algo que la haga correr sola.",
+      "Te entrega cinco ideas con su costo real y cómo medirlas."
+    ],
+    "ejemplos": [
+      "No hay presupuesto de medios para lanzar esta app, ¿qué hacemos?",
+      "Ideas de cero pesos para una panadería que abre en la colonia."
+    ]
+  },
+  "brontis-el-stunt": {
+    "pasos": [
+      "Escribe primero los titulares que te gustaría leer en la prensa.",
+      "Diseña la acción que provocaría cada titular.",
+      "Te entrega tres stunts con su foto clave, escala y riesgos."
+    ],
+    "ejemplos": [
+      "Quiero un stunt para que hablen del relanzamiento de una marca de tenis.",
+      "Dame una activación en calle para un festival de cine independiente."
+    ]
+  },
+  "brontis-robar-como-artista": {
+    "pasos": [
+      "Describe tu referencia sin adjetivos y encuentra su truco.",
+      "Convierte ese truco en una receta que sirve para cualquier marca.",
+      "Te entrega tres ideas con el mismo truco y otra forma."
+    ],
+    "ejemplos": [
+      "Me encanta este anuncio, quiero algo con ese mecanismo para una aseguradora.",
+      "Roba como artista de este meme para una marca de agua mineral."
+    ]
+  },
+  "brontis-la-frase": {
+    "pasos": [
+      "Encuentra la verdad de la marca dicha en bruto.",
+      "Escribe cincuenta frases en cinco territorios distintos.",
+      "Las filtra con seis pruebas y te deja las tres mejores."
+    ],
+    "ejemplos": [
+      "Necesito un tagline para una marca de café de especialidad.",
+      "Dame frases de campaña para una app de ahorro para jóvenes."
+    ]
+  },
+  "brontis-el-guionista-de-30": {
+    "pasos": [
+      "Toma tu idea y la reduce a una sola cosa que contar.",
+      "Reparte cada segundo entre gancho, desarrollo, giro y cierre.",
+      "Te entrega el guion listo y sus versiones de 15 y 6 segundos."
+    ],
+    "ejemplos": [
+      "Vuelve esta idea un guion de 30 segundos.",
+      "Tengo esta idea para un spot de una aerolínea, escríbela con tiempos."
+    ]
+  },
+  "brontis-hilo-fino": {
+    "pasos": [
+      "Saca la frase con la que la gente contaría el mensaje.",
+      "La adapta con las reglas propias de cada red.",
+      "Te entrega el copy listo para cada plataforma."
+    ],
+    "ejemplos": [
+      "Adapta este anuncio para Instagram, TikTok y LinkedIn.",
+      "Escribe los posts de lanzamiento de una marca de bicicletas para cada red."
+    ]
+  },
+  "brontis-manifiesto-sin-cursileria": {
+    "pasos": [
+      "Define una postura que se pueda discutir y un enemigo.",
+      "Escribe el manifiesto con hechos, no con frases bonitas.",
+      "Lo pasa por la lista negra y la prueba de cambiar el logo."
+    ],
+    "ejemplos": [
+      "Escribe el manifiesto de una marca de ropa de trabajo.",
+      "Revisa este manifiesto y quítale lo cursi."
+    ]
+  },
+  "brontis-tijera": {
+    "pasos": [
+      "Fija qué tiene que decir el texto sí o sí.",
+      "Corta en seis pasadas: relleno, eco, adjetivos y más.",
+      "Te entrega la versión corta y lo que quitó en cada pasada."
+    ],
+    "ejemplos": [
+      "Pásalo por la Tijera.",
+      "Recorta este copy a la mitad sin perder la idea."
+    ]
+  },
+  "brontis-director-de-arte-invisible": {
+    "pasos": [
+      "Traduce cada adjetivo de tu idea a una decisión de foto.",
+      "Define lente, luz, encuadre, paleta, textura y época.",
+      "Te entrega prompts listos para tu generador de imágenes."
+    ],
+    "ejemplos": [
+      "Quiero una imagen cálida y nostálgica de una abuela cocinando, dame el prompt.",
+      "Convierte este key visual en prompts para generar con IA."
+    ]
+  },
+  "brontis-plano-a-plano": {
+    "pasos": [
+      "Divide tu escena en tomas, una acción por toma.",
+      "Define cámara, movimiento y lo que pasa en cada una.",
+      "Te entrega un prompt por toma con notas de continuidad."
+    ],
+    "ejemplos": [
+      "Vuelve este guion en prompts de video toma por toma.",
+      "Necesito los prompts para generar esta escena en Kling."
+    ]
+  },
+  "brontis-storyboard-express": {
+    "pasos": [
+      "Divide el guion en cuadros con su duración exacta.",
+      "Define encuadre y acción de cada cuadro.",
+      "Te entrega el storyboard con un prompt por cuadro."
+    ],
+    "ejemplos": [
+      "Haz el storyboard de este guion.",
+      "Pasa este spot de 30 segundos a cuadros listos para generar."
+    ]
+  },
+  "brontis-el-gemelo": {
+    "pasos": [
+      "Congela los rasgos del personaje con palabras que nunca cambian.",
+      "Separa lo fijo de lo que sí cambia: ropa, pose, escenario.",
+      "Te entrega la biblia del personaje y la fórmula para usarla."
+    ],
+    "ejemplos": [
+      "Quiero que este personaje salga igual en todas las imágenes.",
+      "Arma la biblia de personaje para la mascota de esta marca."
+    ]
+  },
+  "brontis-disecar-referencias": {
+    "pasos": [
+      "Revisa la referencia capa por capa: luz, color, encuadre y más.",
+      "Separa lo esencial de lo accidental.",
+      "Te entrega su ADN visual para aplicarlo a otra cosa."
+    ],
+    "ejemplos": [
+      "¿Qué hace que esta foto se vea así? Quiero ese look.",
+      "Diseca esta referencia y dame su receta visual."
+    ]
+  },
+  "brontis-el-deck-que-se-cuenta-solo": {
+    "pasos": [
+      "Ordena tu historia en problema, giro, idea y prueba.",
+      "Escribe cada título como una frase que se sostiene sola.",
+      "Te entrega el deck diapositiva por diapositiva."
+    ],
+    "ejemplos": [
+      "Arma la estructura del deck para presentar esta campaña.",
+      "Tengo la idea, ayúdame a contarla en una presentación."
+    ]
+  },
+  "brontis-la-primera-diapositiva": {
+    "pasos": [
+      "Detecta qué cree hoy el cliente y qué quieres cambiar.",
+      "Escribe cinco aperturas con técnicas distintas.",
+      "Te recomienda una y te da el guion de sus primeros 30 segundos."
+    ],
+    "ejemplos": [
+      "¿Cómo abro la presentación de mañana?",
+      "Dame una apertura que haga que el cliente levante la vista."
+    ]
+  },
+  "brontis-el-cliente-imposible": {
+    "pasos": [
+      "Eliges el tipo de cliente y la dificultad.",
+      "Claude se vuelve ese cliente y no se deja convencer fácil.",
+      "Al final sale del personaje y te califica."
+    ],
+    "ejemplos": [
+      "Hazla de cliente difícil, quiero ensayar mi presentación.",
+      "Simula una junta con el cliente que nunca decide."
+    ]
+  },
+  "brontis-traductor-de-feedback": {
+    "pasos": [
+      "Lee cada comentario del cliente y detecta el miedo detrás.",
+      "Lo convierte en un cambio concreto que sí se puede hacer.",
+      "Te da preguntas cortas para confirmarlo con el cliente."
+    ],
+    "ejemplos": [
+      "El cliente dijo que le falta algo, ¿qué quiso decir?",
+      "Traduce este feedback a cambios concretos."
+    ]
+  },
+  "brontis-jurado-de-cannes": {
+    "pasos": [
+      "Primero decide si ya lo ha visto antes.",
+      "Califica idea, ejecución, impacto, frescura y relevancia.",
+      "Te dice qué premio se llevaría y qué le falta."
+    ],
+    "ejemplos": [
+      "Evalúa esta campaña como jurado de Cannes.",
+      "¿Esta idea tiene nivel de festival?"
+    ]
+  },
+  "brontis-por-que-se-hizo-viral": {
+    "pasos": [
+      "Compara el video contra lo normal del canal.",
+      "Revisa el gancho, la estructura, el formato y los comentarios.",
+      "Te dice qué se puede robar y qué no."
+    ],
+    "ejemplos": [
+      "¿Por qué este video se hizo viral? Te paso el link.",
+      "Analiza este Short y dime qué lo hizo funcionar."
+    ]
+  },
+  "brontis-la-autopsia": {
+    "pasos": [
+      "Cambia la pregunta de quién falló a qué falló en el proceso.",
+      "Separa las buenas decisiones de los buenos resultados.",
+      "Te entrega lecciones concretas para la próxima campaña."
+    ],
+    "ejemplos": [
+      "Hagamos la autopsia de la campaña que acaba de terminar.",
+      "La campaña no funcionó, ayúdame a entender por qué."
+    ]
+  },
+  "brontis-el-case-video": {
+    "pasos": [
+      "Ordena la historia en un reloj de dos minutos.",
+      "Dice la idea antes del segundo 45.",
+      "Exige resultados con fuente y marca los datos que faltan."
+    ],
+    "ejemplos": [
+      "Escribe el case video de esta campaña para premios.",
+      "Tengo estos resultados, armemos el case."
+    ]
+  },
+  "brontis-el-becario-eterno": {
+    "pasos": [
+      "Explica cada término dos veces: la definición y la versión de pasillo.",
+      "Puede tomarte un quiz para ver cuánto sabes.",
+      "O armarte el kit de tu primera semana en agencia."
+    ],
+    "ejemplos": [
+      "¿Qué es un key visual?",
+      "Soy nuevo en agencia, dame el kit de primera semana."
+    ]
+  },
+  "brontis-ya-existe": {
+    "pasos": [
+      "Describe el mecanismo de tu idea, no solo de qué trata.",
+      "Busca en internet en español y en inglés.",
+      "Te dice qué tan cerca estás de algo que ya existe y cómo alejarte."
+    ],
+    "ejemplos": [
+      "¿Ya existe una campaña donde una marca de café regale el último sorbo?",
+      "Revisa si esta idea ya se hizo antes de presentarla."
+    ]
+  },
+  "brontis-el-cementerio-de-ideas": {
+    "pasos": [
+      "Entierras las ideas que te rechazaron, con su brief y por qué murieron.",
+      "Las guarda en un archivo que siempre puedes visitar.",
+      "Cuando llega un brief nuevo, te resucita las que encajan."
+    ],
+    "ejemplos": [
+      "Entierra estas tres ideas que me mató el cliente.",
+      "Llegó este brief, ¿hay algo en el cementerio que sirva?"
+    ]
+  },
+  "brontis-el-bautizo": {
+    "pasos": [
+      "Propone nombres en territorios distintos.",
+      "Los filtra por cómo suenan, cómo se escriben y qué significan en otros lados.",
+      "Revisa en internet si los finalistas ya están tomados."
+    ],
+    "ejemplos": [
+      "Necesito nombre para una línea de salsas picantes.",
+      "Bautiza este proyecto interno de la agencia."
+    ]
+  },
+  "brontis-el-tropicalizador": {
+    "pasos": [
+      "Le dices de qué país viene la pieza y a cuál va.",
+      "Revisa idioma, referencias, humor, gestos, colores y fechas.",
+      "Te entrega cada cambio con el porqué."
+    ],
+    "ejemplos": [
+      "Tropicaliza este guion que viene de España para México.",
+      "Adapta esta campaña gringa para Colombia."
+    ]
+  },
+  "brontis-memeificador": {
+    "pasos": [
+      "Elige formatos de meme que le queden a tu mensaje.",
+      "Respeta la estructura de cada formato y escribe el texto exacto.",
+      "Te avisa que confirmes que el formato sigue vivo."
+    ],
+    "ejemplos": [
+      "Vuelve memes el lanzamiento de esta app.",
+      "Dame cinco memes para la cuenta de una marca de tenis."
+    ]
+  },
+  "brontis-pocket-focus-group": {
+    "pasos": [
+      "Arma seis consumidores distintos, con un escéptico incluido.",
+      "Reaccionan a tu idea, discuten y se contradicen.",
+      "Te deja lo que se repitió, lo que dividió y qué cambiar."
+    ],
+    "ejemplos": [
+      "Haz un focus group con esta idea de campaña.",
+      "¿Qué pensarían las mamás primerizas de este producto?"
+    ]
+  },
+  "brontis-el-lunes": {
+    "pasos": [
+      "Le pasas todo lo que tienes abierto esta semana.",
+      "Separa lo que quema, lo importante, lo delegable y lo que se puede matar.",
+      "Te arma la semana con tiempo protegido para pensar."
+    ],
+    "ejemplos": [
+      "Es lunes y tengo todo esto encima, ayúdame a ordenarlo.",
+      "Arma mi semana con estas entregas y juntas."
+    ]
+  },
+  "brontis-vende-mejor": {
+    "pasos": [
+      "Ancla la defensa en el problema, no en la idea.",
+      "Anticipa cada miedo del cliente: riesgo, costo, jefe, marca, tiempo.",
+      "Te entrega una respuesta y una prueba para cada miedo."
+    ],
+    "ejemplos": [
+      "Ayúdame a defender esta idea frente al cliente.",
+      "El cliente va a decir que es muy arriesgada, prepárame."
+    ]
+  }
+}

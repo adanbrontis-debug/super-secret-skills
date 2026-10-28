@@ -1,0 +1,7 @@
+# Archivo personal de skills descartadas; no va al repositorio público
+descartadas/
+
+# Versión del sitio para la vista previa dentro de Claude (la pública está en docs/)
+site/index.html
+
+.DS_Store

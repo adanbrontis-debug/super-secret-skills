@@ -1,0 +1,488 @@
+<title>Super Secret Skills.</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Super Secret Skills. Skills para Claude Code que te ayudan en el día a día. By Brontis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap">
+<style>
+/* Layout: una hoja crema dentro de un marco de texto corrido; skills en cajas de línea fina con un tramo del arcoíris cada una. */
+:root {
+  --paper: #f3efe4;
+  --panel: #f8f5ec;
+  --ink: #111111;
+  --muted: #6b675e;
+  --line: #111111;
+  --soft: rgba(17, 17, 17, .14);
+  --spectrum: linear-gradient(90deg, #00a6e0 0%, #5b4bff 22%, #c13cff 40%, #ff2d8a 56%, #ff5a1f 70%, #ffb000 84%, #d7ff1f 100%);
+
+  --f-sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --f-mono: "Geist Mono", ui-monospace, Menlo, monospace;
+
+  --band: 26px;
+  --r: 12px;
+  --hair: 1.5px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f0f0e; --panel: #151514; --ink: #f1ede2; --muted: #a39f94;
+    --line: #f1ede2; --soft: rgba(241, 237, 226, .16); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f0f0e; --panel: #151514; --ink: #f1ede2; --muted: #a39f94;
+  --line: #f1ede2; --soft: rgba(241, 237, 226, .16); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-sans);
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -.01em;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01";
+}
+button { font: inherit; color: inherit; cursor: pointer; letter-spacing: inherit; }
+:focus-visible { outline: 2px solid #5b4bff; outline-offset: 2px; }
+::selection { background: #ff2d8a; color: #fff; }
+
+/* ── Marco con texto corrido ───────────────────────────── */
+.frame { position: relative; padding: var(--band); max-width: 1280px; margin: 0 auto; }
+.band {
+  position: absolute; overflow: hidden; white-space: nowrap; user-select: none;
+  font-size: 15px; font-weight: 500; letter-spacing: -.03em; line-height: var(--band);
+}
+.band-top, .band-bottom { left: 0; right: 0; height: var(--band); }
+.band-top { top: 0; }
+.band-bottom { bottom: 0; transform: rotate(180deg); }
+.band-left, .band-right { width: var(--len, 0px); height: var(--band); transform-origin: 0 0; }
+.band-left { left: 0; top: calc(100% - var(--band)); transform: rotate(-90deg); }
+.band-right { left: 100%; top: var(--band); transform: rotate(90deg); }
+.run { display: inline-block; animation: run 90s linear infinite; }
+.run i { display: inline-block; width: .62em; height: .62em; margin: 0 .38em; background: var(--ink); vertical-align: .02em;
+  clip-path: polygon(40% 0, 60% 0, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 0 60%, 0 40%, 40% 40%); }
+.run em { font-family: "Instrument Serif", "Times New Roman", serif; font-style: italic; font-weight: 400; font-size: .86em; letter-spacing: 0; margin-left: .7em; }
+@keyframes run { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .run { animation: none; } .tile, .tile * { transition: none !important; } }
+
+.sheet { border: var(--hair) solid var(--line); border-radius: var(--r); background: var(--panel); overflow: hidden; }
+
+/* ── Encabezado ───────────────────────────────────────── */
+.head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 23rem); align-items: end; gap: 24px 40px; padding: 28px 28px 30px; border-bottom: var(--hair) solid var(--line); }
+.brand { min-width: 0; }
+.logo { margin: 0; font-weight: 600; font-size: clamp(52px, 9.4vw, 136px); line-height: .84; letter-spacing: -.06em; text-wrap: balance; }
+.logo span { display: block; }
+.logo .dot { display: inline; background: var(--spectrum); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.by { margin: 16px 0 0 .2rem; font-size: 15px; font-weight: 500; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px; }
+.mono {
+  display: inline-grid; place-items: center; height: 28px; padding: 0 9px;
+  border: var(--hair) solid var(--line); border-radius: 999px;
+  background: var(--spectrum); color: #111;
+  font-size: 14px; font-weight: 600; letter-spacing: .02em;
+}
+.intro { margin: 0; font-size: clamp(18px, 1.7vw, 21px); line-height: 1.22; letter-spacing: -.025em; font-weight: 500; text-wrap: pretty; }
+.intro span { color: var(--muted); }
+
+/* ── Skills ──────────────────────────────────────────── */
+.grid { display: grid; gap: 20px; padding: 24px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 268px), 1fr)); }
+.tile {
+  display: flex; flex-direction: column;
+  background: var(--panel); border: var(--hair) solid var(--line); border-radius: var(--r); overflow: hidden;
+  transition: transform .25s cubic-bezier(.2,.7,.2,1);
+}
+.tile-body { display: flex; flex-direction: column; flex: 1 1 auto; width: 100%; }
+/* Las tarjetas de una misma fila comparten alturas: nombre, imagen, texto y botón quedan alineados. */
+@supports (grid-template-rows: subgrid) {
+  .tile { display: grid; grid-row: span 4; grid-template-rows: subgrid; gap: 0; }
+  .tile-body { display: contents; }
+  .tile-head { display: flex; flex-direction: column; justify-content: center; }
+}
+.tile-head { margin: 0; font-weight: inherit; font-size: inherit; }
+.try { border: var(--hair) solid var(--line); border-radius: 10px; padding: 11px 14px 12px; background: var(--paper); }
+.try span { font-family: var(--f-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: .02em; color: var(--muted); }
+.try p { margin: 4px 0 0; font-size: 17px; font-weight: 500; letter-spacing: -.025em; line-height: 1.25; }
+.tile-head { width: 100%; padding: 11px 14px 12px; border-bottom: var(--hair) solid var(--line); text-align: center; transition: background .25s; }
+.tile:hover .tile-head { background: var(--spectrum); color: #111; }
+.tile-install {
+  width: 100%; min-height: 48px; border: 0; border-top: var(--hair) solid var(--line);
+  background: var(--ink); color: var(--paper); font-size: 15.5px; font-weight: 500; letter-spacing: -.02em;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.tile-install:hover { background: var(--spectrum); color: #111; }
+.tile-install svg { width: 16px; height: 16px; }
+.tile-num { display: block; font-size: 14px; font-weight: 500; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.tile-name { display: block; font-size: 21px; font-weight: 600; letter-spacing: -.035em; line-height: 1.05; margin-top: 2px; text-wrap: balance; }
+.tile-art { display: block; width: 100%; aspect-ratio: 1 / 1; max-width: 100%; image-rendering: pixelated; border-bottom: var(--hair) solid var(--line); }
+.tile-que { display: block; margin: 0; padding: 13px 14px 16px; font-size: 15.5px; line-height: 1.32; letter-spacing: -.02em; flex: 1 1 auto; text-wrap: pretty; }
+
+/* ── Ventana de copiado ──────────────────────────────── */
+.overlay.center { align-items: center; }
+.copied { max-width: 520px; }
+.copied-body { padding: 18px 22px 22px; display: flex; flex-direction: column; gap: 16px; }
+.copied-steps { list-style: none; margin: 0; padding: 0; border: var(--hair) solid var(--line); border-radius: 10px; overflow: hidden; counter-reset: c; }
+.copied-steps li { counter-increment: c; display: grid; grid-template-columns: 48px minmax(0, 1fr); align-items: center; border-bottom: var(--hair) solid var(--line); }
+.copied-steps li:last-child { border-bottom: 0; }
+.copied-steps li::before { content: counter(c); align-self: stretch; display: grid; place-items: center; border-right: var(--hair) solid var(--line); font-size: 18px; font-weight: 600; }
+.copied-steps li:first-child::before { background: var(--spectrum); color: #111; }
+.copied-steps span { padding: 12px 14px; font-size: 16.5px; font-weight: 500; letter-spacing: -.02em; line-height: 1.25; }
+.copied-steps small { display: block; font-size: 14px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+kbd { font-family: var(--f-mono); font-size: .85em; border: var(--hair) solid var(--line); border-radius: 5px; padding: 0 5px; }
+.manual { display: flex; flex-direction: column; gap: 8px; }
+.manual textarea { width: 100%; height: 140px; resize: vertical; font-family: var(--f-mono); font-size: 12px; background: var(--paper); color: var(--ink); border: var(--hair) solid var(--line); border-radius: 8px; padding: 10px; }
+.copied-body .actions { margin-top: 0; padding-top: 0; }
+.hint a { color: inherit; }
+
+/* ── ¿Cómo instalar? ─────────────────────────────────── */
+.install { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); border-top: var(--hair) solid var(--line); }
+.install-title { padding: 24px 28px; border-right: var(--hair) solid var(--line); }
+.install-title h2 { margin: 0 0 10px; font-size: clamp(40px, 5vw, 64px); font-weight: 600; line-height: .92; letter-spacing: -.06em; }
+.install-title p { margin: 0; max-width: 34ch; font-size: 16px; color: var(--muted); }
+.steps { list-style: none; margin: 0; padding: 0; counter-reset: s; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 64px minmax(0, 1fr); border-bottom: var(--hair) solid var(--line); }
+.steps li:last-child { border-bottom: 0; }
+.steps li::before { content: counter(s, decimal-leading-zero); padding: 14px 0 0 16px; border-right: var(--hair) solid var(--line); font-size: 17px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.steps div { padding: 14px 18px 16px; min-width: 0; }
+.steps strong { display: block; font-size: 18px; font-weight: 600; letter-spacing: -.03em; }
+.steps p { margin: 3px 0 0; font-size: 15px; color: var(--muted); }
+code { font-family: var(--f-mono); font-size: .86em; letter-spacing: 0; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 42px;
+  padding: 0 16px; border: var(--hair) solid var(--line); border-radius: 999px;
+  background: transparent; font-size: 15px; font-weight: 500; letter-spacing: -.02em;
+}
+.btn:hover { background: var(--soft); }
+.btn.primary { background: var(--ink); color: var(--paper); }
+.btn.primary:hover { background: var(--spectrum); color: #111; border-color: var(--line); }
+.steps .btn { margin-top: 12px; }
+
+.foot { display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap; padding: 12px 20px; border-top: var(--hair) solid var(--line); font-size: 13.5px; color: var(--muted); }
+
+/* ── Ventanas ─────────────────────────────────────────── */
+.overlay {
+  position: fixed; inset: 0; z-index: 50; overflow-y: auto;
+  background: color-mix(in srgb, var(--paper) 78%, transparent);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  display: flex; justify-content: center; align-items: flex-start;
+  padding: calc(env(safe-area-inset-top, 0px) + 24px) max(16px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 24px) max(16px, env(safe-area-inset-left, 0px));
+}
+.dialog { width: 100%; max-width: 920px; border: var(--hair) solid var(--line); border-radius: var(--r); background: var(--panel); overflow: hidden; }
+.dlg-head { display: grid; grid-template-columns: 40px minmax(0, 1fr) 40px; align-items: start; padding: 12px 12px 14px; border-bottom: var(--hair) solid var(--line); text-align: center; }
+.dlg-head .meta { font-size: 15px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.dlg-head h2 { margin: 2px 0 0; font-size: clamp(26px, 3.6vw, 38px); font-weight: 600; letter-spacing: -.045em; line-height: 1.02; text-wrap: balance; }
+.close { grid-column: 3; background: none; border: 0; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 999px; }
+.close:hover { background: var(--soft); }
+.close svg { width: 22px; height: 22px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 6px; }
+.hint { margin: 0; font-size: 13.5px; color: var(--muted); }
+
+.toast {
+  position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 22px); transform: translateX(-50%);
+  z-index: 60; background: var(--ink); color: var(--paper); border-radius: 999px;
+  font-size: 14.5px; font-weight: 500; padding: 11px 18px; max-width: calc(100% - 32px); text-align: center;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 860px) {
+  .head { grid-template-columns: minmax(0, 1fr); padding: 22px 20px 22px; }
+  .install { grid-template-columns: minmax(0, 1fr); }
+  .install-title { border-right: 0; border-bottom: var(--hair) solid var(--line); padding: 20px; }
+}
+@media (max-width: 600px) {
+  :root { --band: 22px; --r: 10px; }
+  .band { font-size: 13px; }
+  .copied-body { padding: 16px; }
+  .grid { padding: 14px; gap: 14px; }
+  .steps li { grid-template-columns: 48px minmax(0, 1fr); }
+  .steps li::before { padding-left: 12px; }
+}
+</style>
+
+<div class="frame">
+  <div class="band band-top" aria-hidden="true"><span class="run" data-band></span></div>
+  <div class="band band-right" aria-hidden="true"><span class="run" data-band></span></div>
+  <div class="band band-bottom" aria-hidden="true"><span class="run" data-band></span></div>
+  <div class="band band-left" aria-hidden="true"><span class="run" data-band></span></div>
+
+  <main class="sheet">
+    <header class="head">
+      <div class="brand">
+        <h1 class="logo"><span>Super Secret</span><span>Skills<span class="dot">.</span></span></h1>
+        <p class="by"><span class="mono" aria-label="SSS">SSS</span>By Brontis</p>
+      </div>
+      <p class="intro">Skills para Claude Code que te ayudan en el día a día.</p>
+    </header>
+
+    <section id="grid" class="grid" aria-label="Skills"></section>
+
+    <section class="install" id="instalar">
+      <div class="install-title">
+        <h2>¿Cómo instalar?</h2>
+        <p>Copias, pegas y listo. Funciona en Claude Code, en la terminal, la app de escritorio o la web.</p>
+      </div>
+      <ol class="steps">
+        <li><div><strong>Pica "Instalar skill"</strong><p>La skill se copia sola.</p></div></li>
+        <li><div><strong>Pégala en Claude Code y dale Enter</strong><p>Claude la instala por ti. No tienes que tocar ninguna carpeta.</p></div></li>
+        <li><div><strong>Úsala hablando normal</strong><p>Por ejemplo: "pásalo por la Tijera" o "dame cien malas ideas para una marca de café".</p></div></li>
+        <li><div><strong>¿Las quieres todas?</strong><p>Cópialas todas de una vez y pégalas igual.</p><button class="btn" id="copy-all">Instalar todas</button></div></li>
+      </ol>
+    </section>
+
+    <footer class="foot">
+      <span>SSS · Super Secret Skills. By Brontis · 2026</span>
+      <span>Ningún cliente fue explotado en la escritura de estas skills.</span>
+    </footer>
+  </main>
+</div>
+
+<div class="overlay center" id="copied" hidden>
+  <div class="dialog copied" role="dialog" aria-modal="true" aria-labelledby="copied-title">
+    <div class="dlg-head">
+      <div style="grid-column: 2">
+        <div class="meta" id="copied-meta"></div>
+        <h2 id="copied-title">Ya está copiada</h2>
+      </div>
+      <button class="close" id="copied-close" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l16 16M20 4L4 20"/></svg>
+      </button>
+    </div>
+    <div class="copied-body">
+      <ol class="copied-steps">
+        <li><span>Abre Claude Code</span></li>
+        <li><span>Pega con <kbd>⌘ V</kbd><small>En Windows es <kbd>Ctrl V</kbd>.</small></span></li>
+        <li><span>Dale Enter<small>Claude la instala solo y te avisa cuando esté lista.</small></span></li>
+      </ol>
+      <div class="manual" id="manual" hidden>
+        <p class="hint">Tu navegador no dejó copiar. Selecciona todo este texto, cópialo y pégalo en Claude Code.</p>
+        <textarea id="manual-text" readonly aria-label="Texto para pegar en Claude Code"></textarea>
+      </div>
+      <div class="try" id="try">
+        <span>Luego pídela así</span>
+        <p id="try-text"></p>
+      </div>
+      <div class="actions">
+        <button class="btn primary" id="copied-again">Copiar otra vez</button>
+      </div>
+      <p class="hint">¿No tienes Claude Code? Lo encuentras en <a href="https://claude.com/claude-code" target="_blank" rel="noopener">claude.com/claude-code</a>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+const SKILLS = /*__DATA__*/[];
+
+/* Íconos en pixel art, 16×16. # = tinta, o = papel, . = fondo. */
+const ICONS = {
+  "brontis-cien-malas-ideas": [
+    "......####......","....##oooo##....","...#oooooooo#...","..#oooooooooo#..","..#ooo#oo#ooo#..","..#oooo##oooo#..","..#oooo##oooo#..","...#ooo##ooo#...","....#oo##oo#....",".....#o##o#.....",".....######.....",".....#oooo#.....",".....######.....",".....#oooo#.....","......####......","................"],
+  "brontis-cero-pesos": [
+    ".....######.....","...##oooooo##...","..#oooooooooo#..",".#oooo####oooo#.",".#ooo##oo##ooo#.","#ooo##oooo##ooo#","#ooo##oooo##ooo#","#ooo##oooo##ooo#","#ooo##oooo##ooo#","#ooo##oooo##ooo#","#ooo##oooo##ooo#",".#ooo##oo##ooo#.",".#oooo####oooo#.","..#oooooooooo#..","...##oooooo##...",".....######....."],
+  "brontis-el-stunt": [
+    "................","............##..","..........##o#..","........##ooo#.#",".#####.#ooooo#..",".#ooo##oooooo#.#",".#ooo#ooooooo#..",".#ooo#ooooooo#.#",".#ooo##oooooo#..",".#####.#ooooo#.#","...##...##ooo#..","...##.....##o#..","...##.......##..","...####.........","................","................"],
+  "brontis-robar-como-artista": [
+    "................","................","................","..############..",".#oooooooooooo#.","#oooooooooooooo#","#oo####oo####oo#","#o#....##....#o#","#o#....##....#o#","#oo####oo####oo#",".#oooooooooooo#.","..##oooooooo##..","....###oo###....",".......##.......","................","................"],
+  "brontis-la-frase": [
+    "................","................","................",".######..######.",".#oooo#..#oooo#.",".#oooo#..#oooo#.",".#oooo#..#oooo#.",".######..######.",".....##......##.",".....##......##.","....##......##..","...##......##...","................","................","................","................"],
+  "brontis-el-guionista-de-30": [
+    "................",".##############.",".#o##oo##oo##o#.",".##oo##oo##oo##.",".##############.",".#oooooooooooo#.",".#o########ooo#.",".#oooooooooooo#.",".#o######ooooo#.",".#oooooooooooo#.",".#o#######oooo#.",".#oooooooooooo#.",".##############.","................","................","................"],
+  "brontis-hilo-fino": [
+    ".............##.","............#o#.","...........#o#..","..........#o#...",".........#o#....","........#o#.....",".......#o#......","......#o#.......",".....#o#........","....#o#.........","...###..........","..##............",".#..#...#.......","#....#.#.#..#...","......#...##.#..","..............#."],
+  "brontis-manifiesto-sin-cursileria": [
+    "................",".##.............",".#o##########...",".#o#oooooooo#...",".#o#oooooooo##..",".#o#oooooooooo#.",".#o#ooo##ooooo#.",".#o#oooooooooo#.",".#o############.",".#o#............",".#o#............",".#o#............",".#o#............",".#o#............","####............","................"],
+  "brontis-tijera": [
+    "................",".##.........##..",".#o#.......#o#..","..#o#.....#o#...","...#o#...#o#....","....#o#.#o#.....",".....#o#o#......","......#o#.......",".....#o#o#......","....###.###.....","...#ooo#ooo#....","..#o##o#o##o#...","..#o##o#o##o#...","..#ooo#.#ooo#...","...###...###....","................"],
+  "brontis-director-de-arte-invisible": [
+    "................","................","................",".....######.....","...##oooooo##...","..#ooo####ooo#..",".#ooo######ooo#.","#ooo###oo###ooo#","#ooo###oo###ooo#",".#ooo######ooo#.","..#ooo####ooo#..","...##oooooo##...",".....######.....","................","................","................"],
+  "brontis-plano-a-plano": [
+    "................","................","..###...###.....",".#ooo#.#ooo#....",".#o#o#.#o#o#....",".#ooo#.#ooo#....","..###...###.....",".##########.....",".#oooooooo#..##.",".#oooooooo#.#o#.",".#oooooooo##oo#.",".#oooooooo#ooo#.",".#oooooooo##oo#.",".#oooooooo#.#o#.",".##########..##.","................"],
+  "brontis-storyboard-express": [
+    "................",".######..######.",".#oooo#..#oooo#.",".#o##o#..#oo#o#.",".#oooo#..#oooo#.",".######..######.","................","................",".######..######.",".#oooo#..#oooo#.",".#oo#o#..#o##o#.",".#oooo#..#oooo#.",".######..######.","................","................","................"],
+  "brontis-el-gemelo": [
+    "................","................","..####....####..",".#oooo#..#oooo#.","#o#oo#o##o#oo#o#","#oooooo##oooooo#","#o####o##o####o#",".#oooo#..#oooo#.","..####....####..","................",".######..######.","#oooooo##oooooo#","#oooooo##oooooo#","################","................","................"],
+  "brontis-disecar-referencias": [
+    "................","....######......","...#oooooo#.....","..#oo####oo#....",".#oo#oooo#oo#...",".#o#oooooo#o#...",".#o#oooooo#o#...",".#o#oooooo#o#...",".#oo#oooo#oo#...","..#oo####oo#....","...#oooooo##....","....######o##...","..........#o##..","...........#o##.","............#o#.",".............#.."],
+  "brontis-el-deck-que-se-cuenta-solo": [
+    "................",".##############.",".#oooooooooooo#.",".#oooooooo##oo#.",".#oooooo##o#oo#.",".#oo##oo#oo#oo#.",".#oo#o###oo#oo#.",".#oo#oooooo#oo#.",".#oooooooooooo#.",".##############.",".......##.......",".......##.......","......####......",".....##..##.....","....##....##....","................"],
+  "brontis-la-primera-diapositiva": [
+    "................",".##############.",".#oooooooooooo#.",".#oooooo##oooo#.",".#ooooo###oooo#.",".#oooo####oooo#.",".#oooooo##oooo#.",".#oooooo##oooo#.",".#oooooo##oooo#.",".#oooooo##oooo#.",".#oooo######oo#.",".#oooooooooooo#.",".##############.","................","................","................"],
+  "brontis-vende-mejor": [
+    "................","..############..","..#oooooooooo#..","..#oooooooo#o#..","..#ooooooo##o#..","..#oo#ooo##oo#..","..#oo##o##ooo#..","..#ooo###oooo#..","..#oooo#ooooo#..","...#oooooooo#...","....#oooooo#....",".....#oooo#.....","......####......","................","................","................"],
+  "brontis-el-cliente-imposible": [
+    "................","....########....","...#oooooooo#...","..#oooooooooo#..",".#o##oooooo##o#.",".#ooo##oo##ooo#.",".#oo##oooo##oo#.",".#oo##oooo##oo#.",".#oooooooooooo#.",".#oooooooooooo#.",".#oooo####oooo#.",".#ooo#oooo#ooo#.","..#oooooooooo#..","...#oooooooo#...","....########....","................"],
+  "brontis-traductor-de-feedback": [
+    "................",".#########......","#ooooooooo#.....","#o######oo#.....","#ooooooooo#.....","#o####oooo#.....",".##o#######.....","..##............",".......#########","......#oooooooo#","......#oo####oo#","......#oooooooo#","......#oo#####o#","......#oooooooo#",".......######o#.","............##.."],
+  "brontis-jurado-de-cannes": [
+    "................","...##########...",".###oooooooo###.","#o#oooooooooo#o#","#o#oooooooooo#o#",".#o#oooooooo#o#.","..##oooooooo##..","....#oooooo#....",".....#oooo#.....","......#oo#......","......#oo#......",".....######.....","....#oooooo#....","....########....","................","................"],
+  "brontis-por-que-se-hizo-viral": [
+    "................",".........####...","........#oo#....",".......#oo#.....","......#oo#......",".....#oo#.......","....#oo######...","...#ooooooo#....","...######oo#....",".......#oo#.....","......#oo#......",".....#oo#.......","....#oo#........","...#o#..........","...##...........","................"],
+  "brontis-la-autopsia": [
+    "................","....########....","...#oooooooo#...","..#oooooooooo#..","..#oooooooooo#..","..#o###oo###o#..","..#o###oo###o#..","..#oooo##oooo#..","...#ooo##ooo#...","....#oooooo#....","....#o#o#o##....","....#oooooo#....",".....######.....","................","................","................"],
+  "brontis-el-case-video": [
+    "................","...#......#.....","....#....#......",".....#..#.......",".##############.",".#oooooooooooo#.",".#oooo#ooooooo#.",".#oooo##oooooo#.",".#oooo###ooooo#.",".#oooo####oooo#.",".#oooo###ooooo#.",".#oooo##oooooo#.",".#oooo#ooooooo#.",".##############.","...##......##...","................"],
+  "brontis-el-becario-eterno": [
+    "................",".....#..#..#....","....#..#..#.....",".....#..#..#....","................","..##########....","..#oooooooo####.","..#oooooooo#oo#.","..#oooooooo#oo#.","..#oooooooo####.","..#oooooooo#....","...#oooooo#.....",".##############.","..############..","................","................"]
+};
+
+
+/* El arcoíris completo se reparte entre todas las skills: cada una se lleva su tramo. */
+const STOPS = ["#00a6e0", "#5b4bff", "#c13cff", "#ff2d8a", "#ff5a1f", "#ffb000", "#d7ff1f"];
+const INK = "#111111", PAPER = "#f8f5ec";
+const pad = n => String(n).padStart(2, "0");
+const $ = s => document.querySelector(s);
+
+function hexToRgb(h) { const n = parseInt(h.slice(1), 16); return [n >> 16, (n >> 8) & 255, n & 255]; }
+function sample(t) {
+  t = Math.min(1, Math.max(0, t));
+  const p = t * (STOPS.length - 1), i = Math.min(STOPS.length - 2, Math.floor(p)), f = p - i;
+  const a = hexToRgb(STOPS[i]), b = hexToRgb(STOPS[i + 1]);
+  return `rgb(${a.map((v, k) => Math.round(v + (b[k] - v) * f)).join(",")})`;
+}
+
+function drawArt(canvas, skill) {
+  if (skill.img) {
+    const im = new Image();
+    im.onload = () => {
+      /* El lienzo toma el tamaño real de la imagen para que cada píxel de la trama quede parejo. */
+      canvas.width = im.naturalWidth; canvas.height = im.naturalHeight;
+      const ctx = canvas.getContext("2d");
+      ctx.imageSmoothingEnabled = false;
+      ctx.drawImage(im, 0, 0);
+    };
+    im.src = skill.img;
+    return;
+  }
+  const N = 26, off = 5, px = canvas.width / N, ctx = canvas.getContext("2d");
+  const total = SKILLS.length, t0 = (skill.num - 1) / total, t1 = skill.num / total;
+  const span = Math.max(t1 - t0, 0.18), mid = (t0 + t1) / 2;
+  const g = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+  for (let k = 0; k <= 6; k++) g.addColorStop(k / 6, sample(mid - span / 2 + span * k / 6));
+  ctx.imageSmoothingEnabled = false;
+  ctx.fillStyle = g; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  const icon = ICONS[skill.slug] || [];
+  icon.forEach((row, y) => {
+    [...row.padEnd(16, ".").slice(0, 16)].forEach((ch, x) => {
+      if (ch === ".") return;
+      ctx.fillStyle = ch === "#" ? INK : PAPER;
+      ctx.fillRect(Math.round((x + off) * px), Math.round((y + off) * px), Math.ceil(px), Math.ceil(px));
+    });
+  });
+}
+
+/* ── Marco ── */
+const BAND_UNIT = "Super Secret Skills<i></i>SSS.<em>By Brontis.</em><i></i>";
+const frame = document.querySelector(".frame");
+const runs = [...document.querySelectorAll("[data-band]")];
+let bandReps = 0;
+function sizeBands() {
+  const band = parseFloat(getComputedStyle(frame).paddingTop) || 0;
+  const len = Math.max(frame.clientWidth, frame.clientHeight - 2 * band);
+  frame.style.setProperty("--len", Math.max(0, frame.clientHeight - 2 * band) + "px");
+  /* El texto debe medir al menos el doble del lado más largo para que el corrido nunca deje huecos. */
+  const reps = Math.ceil(len / 150) * 2 + 4;
+  if (reps > bandReps) {
+    bandReps = reps;
+    const html = BAND_UNIT.repeat(reps);
+    runs.forEach(el => { el.innerHTML = html; });
+  }
+  runs.forEach(el => { el.style.animationDuration = Math.round(el.scrollWidth / 2 / 28) + "s"; });
+}
+if ("ResizeObserver" in window) new ResizeObserver(sizeBands).observe(frame);
+sizeBands();
+
+function esc(t) { return t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+
+const ICON_DOWN = `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 2v9M4 7.5 8 11.5 12 7.5M3 14h10"/></svg>`;
+
+function renderGrid() {
+  const grid = $("#grid");
+  grid.innerHTML = "";
+  SKILLS.forEach(s => {
+    const card = document.createElement("article");
+    card.className = "tile";
+    card.innerHTML = `
+      <div class="tile-body">
+        <h2 class="tile-head"><span class="tile-num">${pad(s.num)}</span><span class="tile-name">${esc(s.title)}</span></h2>
+        <canvas class="tile-art" width="312" height="312" aria-hidden="true"></canvas>
+        <p class="tile-que">${esc(s.que)}</p>
+      </div>
+      <button class="tile-install" aria-label="Instalar ${esc(s.title)}">${ICON_DOWN}Instalar skill</button>`;
+    card.querySelector(".tile-install").addEventListener("click", () => install([s]));
+    grid.appendChild(card);
+    drawArt(card.querySelector("canvas"), s);
+  });
+}
+
+function render() { renderGrid(); }
+
+/* ── Copiar ── */
+let toastT;
+function toast(msg) {
+  const t = $("#toast"); t.textContent = msg; t.hidden = false;
+  clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, 2600);
+}
+function fallbackCopy(text) {
+  const ta = document.createElement("textarea");
+  ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta); ta.select();
+  let ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+  ta.remove(); return ok;
+}
+/* Copia y avisa si funcionó. Devuelve una promesa con true o false. */
+function copyText(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(text).then(() => true, () => fallbackCopy(text));
+  }
+  return Promise.resolve(fallbackCopy(text));
+}
+function copy(text, okMsg) {
+  copyText(text).then(ok => toast(ok ? okMsg : "No se pudo copiar. Selecciona el texto y cópialo a mano."));
+}
+
+/* El texto que se pega en Claude Code: una instrucción clara más el contenido exacto de cada skill. */
+function installPrompt(list) {
+  const one = list.length === 1;
+  const head = one
+    ? `Instala esta skill en mi Claude Code. Crea el archivo ~/.claude/skills/${list[0].slug}/SKILL.md con exactamente el contenido que va entre las marcas INICIO y FIN, sin cambiar nada. Si la carpeta no existe, créala. Cuando termines, dime en una línea que quedó instalada y cómo la uso.`
+    : `Instala estas ${list.length} skills en mi Claude Code. Para cada una, crea el archivo ~/.claude/skills/<nombre>/SKILL.md con exactamente el contenido que va entre sus marcas INICIO y FIN, sin cambiar nada. Si una carpeta no existe, créala. Cuando termines, dime en una línea cuántas quedaron instaladas.`;
+  const body = list.map(s =>
+    `===== INICIO ${s.slug} =====\n${s.md.replace(/\n$/, "")}\n===== FIN ${s.slug} =====`
+  ).join("\n\n");
+  return `${head}\n\n${body}\n`;
+}
+
+let pending = null;
+function install(list) {
+  pending = list;
+  const text = installPrompt(list);
+  copyText(text).then(ok => {
+    $("#copied-meta").textContent = list.length === 1 ? `${pad(list[0].num)} · ${list[0].title}` : `Las ${list.length} skills`;
+    $("#copied-title").textContent = ok ? (list.length === 1 ? "Ya está copiada" : "Ya están copiadas") : "Cópiala a mano";
+    $("#manual").hidden = ok;
+    $("#manual-text").value = ok ? "" : text;
+    $("#try").hidden = list.length !== 1;
+    $("#try-text").textContent = list.length === 1 ? `“${list[0].ejemplos[0]}”` : "";
+    $("#copied").hidden = false;
+    document.body.style.overflow = "hidden";
+    if (ok) $("#copied-close").focus(); else $("#manual-text").select();
+  });
+}
+function closeCopied() {
+  $("#copied").hidden = true;
+  document.body.style.overflow = "";
+}
+$("#copied-close").addEventListener("click", closeCopied);
+$("#copied").addEventListener("click", e => { if (e.target.id === "copied") closeCopied(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#copied").hidden) closeCopied(); });
+$("#copied-again").addEventListener("click", () => pending && copyText(installPrompt(pending)).then(ok => toast(ok ? "Copiada otra vez." : "No se pudo copiar.")));
+$("#copy-all").addEventListener("click", () => install(SKILLS));
+
+/* ── Arranque ── */
+render();
+</script>
