@@ -27,7 +27,7 @@ Si prefieres hacerlo a mano, copia la carpeta de la skill desde `skills/` a `~/.
 El sitio se genera a partir de las skills, la lista y las imágenes tramadas. Después de editar cualquiera de esas cosas:
 
 ```bash
-SITE_URL=https://TU-USUARIO.github.io/super-secret-skills python3 -I site/build.py
+SITE_URL=https://adanbrontis-debug.github.io/super-secret-skills python3 -I site/build.py
 ```
 
 Las imágenes se traman con `site/dither.py`: una escena en blanco y negro entra, y sale a dos tonos, negro más el tramo del arcoíris que le toca a esa skill según su número.
